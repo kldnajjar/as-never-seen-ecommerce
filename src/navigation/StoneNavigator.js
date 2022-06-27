@@ -194,7 +194,7 @@ export const TabScreen = () => {
         tabBarIcon: ({ focused }) => {
           let iconName;
           const color = focused ? Colors.lighter_green : Colors.grey;
-          if (route.name === "HomeTab") {
+          if (route.name === "HomeTabStack") {
             iconName = "home";
           } else if (route.name === "Favorite") {
             iconName = "hearto";
@@ -213,7 +213,7 @@ export const TabScreen = () => {
       inactiveColor={Colors.grey}
     >
       <Tab.Screen
-        name="HomeTab"
+        name="HomeTabStack"
         component={HomeStackScreen}
         options={{
           tabBarLabel: "Home page",
