@@ -1,22 +1,15 @@
-import * as Notifications from 'expo-notifications';
-import * as Permissions from 'expo-permissions';
+import * as Notifications from "expo-notifications";
 
 const AskingNotificationPermissonToken = async () => {
-  let token;
-  const { status: existingStatus } = await Permissions.getAsync(
-    Permissions.NOTIFICATIONS,
-  );
-  let finalStatus = existingStatus;
-  if (existingStatus !== 'granted') {
-    const { status } = await Permissions.askAsync(Permissions.NOTIFICATIONS);
-    finalStatus = status;
+  try {
+    const permission = await Notifications.requestPermissionsAsync();
+    if (!permission.granted) return;
+
+    const token = (await Notifications.getExpoPushTokenAsync()).data;
+    console.log(token);
+  } catch (error) {
+    console.log("Error getting a push token ", error);
   }
-  if (finalStatus !== 'granted') {
-    console.log('Failed to get push token for push notification!');
-    return (token = '');
-  }
-  token = (await Notifications.getExpoPushTokenAsync()).data;
-  return token;
 };
 
 export default AskingNotificationPermissonToken;
