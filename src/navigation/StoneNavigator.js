@@ -1,5 +1,5 @@
 import React from "react";
-import { Platform } from "react-native";
+import { Platform, View } from "react-native";
 import {
   createStackNavigator,
   CardStyleInterpolators,
@@ -88,15 +88,17 @@ export const AuthStackScreen = () => (
 
 const FavoriteStack = createStackNavigator();
 export const FavoriteStackScreen = () => (
-  <FavoriteStack.Navigator
-    screenOptions={{
-      headerShown: false,
-      cardStyleInterpolator: CardStyleInterpolators.forVerticalIOS,
-    }}
-  >
-    <FavoriteStack.Screen name="FavoriteScreen" component={FavoriteScreen} />
-    <FavoriteStack.Screen name="Detail" component={DetailScreen} />
-  </FavoriteStack.Navigator>
+  <View style={{ flex: 1 }} collapsable={false}>
+    <FavoriteStack.Navigator
+      screenOptions={{
+        headerShown: false,
+        cardStyleInterpolator: CardStyleInterpolators.forVerticalIOS,
+      }}
+    >
+      <FavoriteStack.Screen name="FavoriteScreen" component={FavoriteScreen} />
+      <FavoriteStack.Screen name="Detail" component={DetailScreen} />
+    </FavoriteStack.Navigator>
+  </View>
 );
 
 const PaymentStack = createStackNavigator();
@@ -119,16 +121,18 @@ export const PaymentStackScreen = () => (
 
 const CartStack = createStackNavigator();
 export const CartStackScreen = () => (
-  <CartStack.Navigator screenOptions={{ headerShown: false }}>
-    <CartStack.Screen name="CartScreen" component={CartScreen} />
+  <View style={{ flex: 1 }} collapsable={false}>
+    <CartStack.Navigator screenOptions={{ headerShown: false }}>
+      <CartStack.Screen name="CartScreen" component={CartScreen} />
 
-    <CartStack.Screen name="PreOrderScreen" component={PreOrderScreen} />
-    <CartStack.Screen name="Payment" component={PaymentStackScreen} />
-    <CartStack.Screen
-      name="AddCreditCardScreen"
-      component={AddCreditCardScreen}
-    />
-  </CartStack.Navigator>
+      <CartStack.Screen name="PreOrderScreen" component={PreOrderScreen} />
+      <CartStack.Screen name="Payment" component={PaymentStackScreen} />
+      <CartStack.Screen
+        name="AddCreditCardScreen"
+        component={AddCreditCardScreen}
+      />
+    </CartStack.Navigator>
+  </View>
 );
 
 const ProductStack = createStackNavigator();
@@ -164,23 +168,25 @@ export const ProfileStackScreen = () => (
 
 const HomeStack = createStackNavigator();
 export const HomeStackScreen = () => (
-  <HomeStack.Navigator
-    screenOptions={{
-      headerShown: false,
-      cardStyleInterpolator: CardStyleInterpolators.forVerticalIOS,
-    }}
-  >
-    <HomeStack.Screen
-      name="Home"
-      component={HomeScreen}
-      //animationEnabled: false , nằm trong option
-    />
-    <HomeStack.Screen name="Detail" component={DetailScreen} />
-    <HomeStack.Screen name="Cart" component={CartStackScreen} />
-    <HomeStack.Screen name="Product" component={ProductStackScreen} />
-    <HomeStack.Screen name="FinishOrder" component={FinishOrderScreen} />
-    <HomeStack.Screen name="ResetPw" component={ResetPwScreen} />
-  </HomeStack.Navigator>
+  <View style={{ flex: 1 }} collapsable={false}>
+    <HomeStack.Navigator
+      screenOptions={{
+        headerShown: false,
+        cardStyleInterpolator: CardStyleInterpolators.forVerticalIOS,
+      }}
+    >
+      <HomeStack.Screen
+        name="Home"
+        component={HomeScreen}
+        //animationEnabled: false , nằm trong option
+      />
+      <HomeStack.Screen name="Detail" component={DetailScreen} />
+      <HomeStack.Screen name="Cart" component={CartStackScreen} />
+      <HomeStack.Screen name="Product" component={ProductStackScreen} />
+      <HomeStack.Screen name="FinishOrder" component={FinishOrderScreen} />
+      <HomeStack.Screen name="ResetPw" component={ResetPwScreen} />
+    </HomeStack.Navigator>
+  </View>
 );
 
 //Tab
