@@ -88,7 +88,7 @@ export class ModalComp extends React.PureComponent {
               <CustomText
                 style={{ marginTop: 5, fontSize: 14, color: Colors.text }}
               >
-                Into money:
+                Amount:
               </CustomText>
               <NumberFormat price={item.price} />
             </View>

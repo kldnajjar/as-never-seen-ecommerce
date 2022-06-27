@@ -22,7 +22,7 @@ export class TotalButton extends React.PureComponent {
           <CustomText
             style={{ fontSize: 14, fontWeight: "500", color: Colors.text }}
           >
-            into money
+            Amount
           </CustomText>
           <NumberFormat price={total.toString()} style={{ fontSize: 14 }} />
         </View>
