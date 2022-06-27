@@ -35,13 +35,13 @@ export default (props) => {
   const user = useSelector((state) => state.auth.user);
   const dispatch = useDispatch();
   const Logout = () => {
-    Alert.alert("Đăng Xuất", "Bạn có chắc muốn đăng xuất?", [
+    Alert.alert("Logout", "Are you sure you want to sign out?", [
       {
-        text: "Hủy",
+        text: "Cancel",
         style: "cancel",
       },
       {
-        text: "Đồng ý",
+        text: "Agree",
         onPress: () => {
           dispatch(LogoutAction());
           props.navigation.navigate("Home");
@@ -148,7 +148,7 @@ export default (props) => {
                   fontFamily: "Roboto-Medium",
                 }}
               >
-                Đăng xuất
+                Logout
               </CustomText>
             </View>
           )}

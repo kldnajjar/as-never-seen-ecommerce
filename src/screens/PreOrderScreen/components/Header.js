@@ -27,7 +27,7 @@ export const Header = ({ navigation }) => {
         >
           <TouchableOpacity onPress={() => navigation.goBack()}>
             <Ionicons
-              name='ios-arrow-back'
+              name="ios-arrow-back"
               size={30}
               color={Colors.lighter_green}
             />
@@ -35,7 +35,7 @@ export const Header = ({ navigation }) => {
         </View>
 
         <View style={styles.orderStepsContainer}>
-          <CustomText style={styles.title}> Địa chỉ giao hàng </CustomText>
+          <CustomText style={styles.title}> Delivery address </CustomText>
           <View style={styles.orderSteps}>
             <OrderSteps position={1} />
           </View>
