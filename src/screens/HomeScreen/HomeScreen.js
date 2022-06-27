@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
   },
   list: {
     width: "100%",
-    // marginTop: 50,
-    // paddingBottom: 20,
+    marginTop: 50,
+    paddingBottom: 50,
   },
 });
