@@ -56,7 +56,7 @@ export const IntroScreen = () => {
           horizontal
           snapToInterval={width}
           scrollTo={{ x: scrollClick, animated: true }}
-          decelerationRate='fast'
+          decelerationRate="fast"
           showsHorizontalScrollIndicator={false}
           bounces={false}
           scrollEventThrottle={1}

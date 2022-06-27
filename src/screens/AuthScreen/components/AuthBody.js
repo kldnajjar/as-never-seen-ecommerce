@@ -34,7 +34,7 @@ export const AuthBody = ({ navigation }) => {
         source={require("../../../components/IconAnimation/welcome.json")}
         autoPlay
         loop
-        resizeMode='contain'
+        resizeMode="contain"
         style={{ height: 115 }}
       />
       <TouchableOpacity onPress={() => navigation.navigate("LoginScreen")}>

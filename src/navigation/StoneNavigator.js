@@ -68,7 +68,7 @@ export const LoginStackScreen = () => (
     }}
     mode="modal"
   >
-    <LoginStack.Screen name="LoginScreen" component={LoginScreen} />
+    <LoginStack.Screen name="LoginScreenStack" component={LoginScreen} />
     <LoginStack.Screen name="ForgetPwScreen" component={ForgetPwScreen} />
   </LoginStack.Navigator>
 );
