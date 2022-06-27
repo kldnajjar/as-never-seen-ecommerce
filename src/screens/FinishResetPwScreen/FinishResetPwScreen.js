@@ -22,7 +22,7 @@ export const FinishResetPwScreen = (props) => {
           source={require("../../components/IconAnimation/mail-done.json")}
           autoPlay
           loop={false}
-          resizeMode='cover'
+          resizeMode="cover"
           style={{ height: 130 }}
         />
         <CustomText style={{ marginVertical: 20 }}>
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
   },
   button: {
     marginTop: 20,
-    backgroundColor: Colors.lighter_green,
+    backgroundColor: Colors.lighter_purple,
     width: 200,
     height: 45,
     paddingVertical: 10,

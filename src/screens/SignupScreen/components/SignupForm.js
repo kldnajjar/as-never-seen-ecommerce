@@ -194,7 +194,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderRadius: 5,
     flexDirection: "row",
-    backgroundColor: Colors.lighter_green,
+    backgroundColor: Colors.lighter_purple,
     marginTop: 10,
   },
   title: {
@@ -210,7 +210,7 @@ const styles = StyleSheet.create({
     fontFamily: "Roboto-Medium",
   },
   textSignSmall: {
-    color: Colors.lighter_green,
+    color: Colors.lighter_purple,
     textAlign: "center",
   },
 });

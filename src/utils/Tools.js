@@ -104,7 +104,7 @@ export const colorCheck = (colorCode) => {
     case "pink":
       return Colors.straw;
     default:
-      return Colors.lighter_green;
+      return Colors.lighter_purple;
   }
 };
 

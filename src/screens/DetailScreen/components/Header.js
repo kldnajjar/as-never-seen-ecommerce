@@ -75,7 +75,7 @@ export const Header = ({ navigation, scrollY, item }) => {
           top: 0,
           left: 0,
           right: 0,
-          backgroundColor: Colors.lighter_green,
+          backgroundColor: Colors.lighter_purple,
           overflow: "hidden",
           opacity: headerOpacity,
           height: HEADER_MAX_HEIGHT,

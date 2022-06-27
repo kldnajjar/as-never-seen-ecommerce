@@ -69,7 +69,7 @@ export class ProductItem extends React.PureComponent {
           </View>
           <View style={styles.info}>
             <View style={styles.rate}>
-              <AntDesign name="star" color="#fed922" size={15} />
+              <AntDesign name="star" color={Colors.orange} size={15} />
               <Text style={styles.score}>5.0</Text>
             </View>
             <NumberFormat price={item.price} />
@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
   },
   name: {
     marginTop: 3,
-    color: Colors.lighter_green,
+    color: Colors.black,
     textAlign: "center",
     fontWeight: "500",
   },
@@ -141,10 +141,10 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     borderRadius: 5,
     borderWidth: 1,
-    borderColor: Colors.lighter_green,
+    borderColor: Colors.lighter_purple,
   },
   detailBtn: {
-    color: Colors.lighter_green,
+    color: Colors.lighter_purple,
     marginRight: 5,
   },
 });

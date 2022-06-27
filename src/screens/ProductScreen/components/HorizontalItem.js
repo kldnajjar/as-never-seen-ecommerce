@@ -22,7 +22,7 @@ const HorizontalItem = ({ item, navigation }) => {
   const [isLoading, setIsLoading] = useState(true);
   return (
     <View style={{ backgroundColor: Colors.white }}>
-      <BlurView tint="dark" intensity={10} style={styles.itemContainer}>
+      <View style={styles.itemContainer}>
         <TouchableOpacity
           onPress={() => navigation.navigate("Detail", { item: item })}
           style={{ marginLeft: 5, width: "40%", marginRight: 10 }}
@@ -50,16 +50,16 @@ const HorizontalItem = ({ item, navigation }) => {
         </TouchableOpacity>
         <View style={styles.info}>
           <CustomText style={styles.title}>{item.filename}</CustomText>
-          <CustomText style={styles.subText}>Xuất xứ {item.origin}</CustomText>
+          <CustomText style={styles.subText}>Origin {item.origin}</CustomText>
           <View style={styles.rateContainer}>
             <View style={styles.rate}>
-              <AntDesign name="star" color="#fed922" size={15} />
+              <AntDesign name="star" color={Colors.orange} size={15} />
               <CustomText style={styles.score}>4.5</CustomText>
             </View>
             <NumberFormat price={item.price} />
           </View>
         </View>
-      </BlurView>
+      </View>
     </View>
   );
 };

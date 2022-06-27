@@ -124,7 +124,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   detailButtom: {
-    backgroundColor: Colors.lighter_green,
+    backgroundColor: Colors.lighter_purple,
     alignItems: "center",
     paddingVertical: 10,
     borderRadius: 5,
@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
     marginVertical: 5,
   },
   detail: {
-    color: Colors.lighter_green,
+    color: Colors.lighter_purple,
   },
   steps: {
     width: "100%",

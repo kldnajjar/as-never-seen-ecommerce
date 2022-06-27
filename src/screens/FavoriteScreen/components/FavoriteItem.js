@@ -83,14 +83,14 @@ export const FavoriteItem = ({ navigation, item }) => {
     return (
       <View style={{ width: 170, flexDirection: "row" }}>
         {renderRightAction(
-          "Thêm vào giỏ",
+          "Add to Basket",
           "#ffab00",
           addToCartAct,
           140,
           progress
         )}
         {renderRightAction(
-          "Bỏ thích",
+          "Dislike",
           Colors.red,
           removeFavoriteAct,
           30,
@@ -220,7 +220,7 @@ const styles = StyleSheet.create({
   },
   price: {
     fontSize: 13,
-    color: Colors.red,
+    color: Colors.orange,
   },
   action: {
     alignItems: "center",

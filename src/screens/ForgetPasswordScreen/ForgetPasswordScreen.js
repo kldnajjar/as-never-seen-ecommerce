@@ -61,18 +61,18 @@ const SignupForm = (props) => {
         style={{ position: "absolute", top: 30, left: 20 }}
       >
         <Feather
-          name='arrow-left-circle'
+          name="arrow-left-circle"
           size={30}
-          color={Colors.lighter_green}
+          color={Colors.lighter_purple}
         />
       </TouchableOpacity>
       <View style={styles.content}>
         <CustomText style={styles.title}> Forget Password </CustomText>
         <Field
-          name='email'
-          keyboardType='email-address'
-          icon='email'
-          label='Email'
+          name="email"
+          keyboardType="email-address"
+          icon="email"
+          label="Email"
           component={renderField}
         />
         <TouchableOpacity
@@ -81,7 +81,7 @@ const SignupForm = (props) => {
         >
           <View style={styles.signIn}>
             {loading ? (
-              <ActivityIndicator size='small' color='#fff' />
+              <ActivityIndicator size="small" color="#fff" />
             ) : (
               <CustomText style={styles.textSign}>NEXT</CustomText>
             )}
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   title: {
-    color: Colors.lighter_green,
+    color: Colors.lighter_purple,
     fontSize: 30,
   },
   signIn: {
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     flexDirection: "row",
     marginBottom: 10,
-    backgroundColor: Colors.lighter_green,
+    backgroundColor: Colors.lighter_purple,
   },
   textSign: {
     fontSize: 15,

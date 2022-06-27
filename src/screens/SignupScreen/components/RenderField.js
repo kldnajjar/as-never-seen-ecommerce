@@ -33,7 +33,7 @@ export default renderField = ({
           <TextInput.Icon
             name={icon}
             size={24}
-            color={Colors.lighter_green}
+            color={Colors.lighter_purple}
             style={{ paddingRight: 10 }}
           />
         }
@@ -55,7 +55,7 @@ export default renderField = ({
           }}
           name={showPass ? "eye" : "eye-off"}
           size={24}
-          color={Colors.lighter_green}
+          color={Colors.lighter_purple}
           style={{
             position: "absolute",
             top: "40%",
@@ -70,7 +70,7 @@ export default renderField = ({
           }}
           name={showConfirmPass ? "eye" : "eye-off"}
           size={24}
-          color={Colors.lighter_green}
+          color={Colors.lighter_purple}
           style={{
             position: "absolute",
             top: "40%",

@@ -16,16 +16,16 @@ export default renderField = ({
     <View style={{ marginTop: 30 }}>
       <TextInput
         placeholder={label}
-        autoCapitalize='none'
-        clearButtonMode='always'
-        mode='outlined'
+        autoCapitalize="none"
+        clearButtonMode="always"
+        mode="outlined"
         selectionColor={Colors.leave_green}
         theme={{ colors: { primary: Colors.leave_green } }}
         left={
           <TextInput.Icon
             name={icon}
             size={24}
-            color={Colors.lighter_green}
+            color={Colors.lighter_purple}
             style={{ paddingRight: 10 }}
           />
         }

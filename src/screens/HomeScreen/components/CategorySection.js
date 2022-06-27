@@ -30,7 +30,7 @@ export class CategorySection extends React.PureComponent {
     }
     return (
       <View style={[styles.category]}>
-        <Image style={styles.background} source={bg} blurRadius={10} />
+        {/* <Image style={styles.background} source={bg} blurRadius={10} /> */}
         <View style={styles.titleHeader}>
           <CustomText style={styles.title}>{name}</CustomText>
         </View>
@@ -53,11 +53,9 @@ export class CategorySection extends React.PureComponent {
         </View>
         <TouchableOpacity
           onPress={() => navigation.navigate("Product")}
-          style={{ marginHorizontal: 10 }}
+          style={styles.seeMore}
         >
-          <BlurView tint="light" intensity={100} style={styles.seeMore}>
-            <CustomText style={styles.seeMoreText}>See more</CustomText>
-          </BlurView>
+          <CustomText style={styles.seeMoreText}>See more</CustomText>
         </TouchableOpacity>
       </View>
     );
@@ -71,12 +69,14 @@ CategorySection.propTypes = {
 
 const styles = StyleSheet.create({
   category: {
-    height: 518,
+    // height: 518,
     marginHorizontal: 5,
     marginVertical: 5,
     paddingVertical: 15,
     borderRadius: 5,
     overflow: "hidden",
+    // backgroundColor: "rgba(0, 0, 0, 0.7)",
+    // 8448
   },
   background: {
     position: "absolute",
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 18,
-    color: Colors.light_green,
+    color: Colors.black,
     fontWeight: "500",
   },
   list: {
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   seeMore: {
-    // backgroundColor: "rgba(255, 255, 255, 0.9)",
+    backgroundColor: Colors.purple,
     width: "100%",
     height: 45,
     borderRadius: 5,
@@ -113,6 +113,6 @@ const styles = StyleSheet.create({
   },
   seeMoreText: {
     fontSize: 14,
-    color: Colors.lighter_green,
+    color: Colors.white,
   },
 });

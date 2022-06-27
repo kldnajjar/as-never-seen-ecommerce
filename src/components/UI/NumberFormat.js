@@ -23,7 +23,7 @@ const Number = ({ price, color }, props) => {
           }
         >
           <CustomText
-            style={{ ...props.style, color: color ? "#fff" : Colors.red }}
+            style={{ ...props.style, color: color ? "#fff" : Colors.orange }}
           >
             {formattedValue}
           </CustomText>

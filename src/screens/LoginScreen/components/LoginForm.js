@@ -231,7 +231,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderRadius: 5,
     flexDirection: "row",
-    backgroundColor: Colors.lighter_green,
+    backgroundColor: Colors.lighter_purple,
   },
   textSign: {
     fontSize: 15,
@@ -239,7 +239,7 @@ const styles = StyleSheet.create({
     fontFamily: "Roboto-Medium",
   },
   textSignSmall: {
-    color: Colors.lighter_green,
+    color: Colors.lighter_purple,
     textAlign: "center",
   },
   center: {
@@ -260,7 +260,7 @@ const styles = StyleSheet.create({
     width: 70,
   },
   loginOpt: {
-    color: Colors.lighter_green,
+    color: Colors.lighter_purple,
     fontFamily: "Roboto-Medium",
     marginBottom: 10,
   },

@@ -22,8 +22,8 @@ export default renderField = ({
       <View>
         <TextInput
           placeholder={label}
-          autoCapitalize='none'
-          mode='outlined'
+          autoCapitalize="none"
+          mode="outlined"
           clearButtonMode={passIcon ? "never" : "always"}
           selectionColor={Colors.leave_green}
           theme={{ colors: { primary: Colors.leave_green } }}
@@ -31,7 +31,7 @@ export default renderField = ({
             <TextInput.Icon
               name={icon}
               size={24}
-              color={Colors.lighter_green}
+              color={Colors.lighter_purple}
               style={{ paddingRight: 10 }}
             />
           }
@@ -50,7 +50,7 @@ export default renderField = ({
           <MaterialCommunityIcons
             name={showPass ? "eye" : "eye-off"}
             size={24}
-            color={Colors.lighter_green}
+            color={Colors.lighter_purple}
             onPress={() => {
               setShowPass((prev) => !prev);
             }}
