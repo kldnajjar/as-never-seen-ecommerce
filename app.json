@@ -1,9 +1,9 @@
 {
   "expo": {
-    "scheme": "cattuong",
-    "name": "Cat Tuong",
+    "scheme": "asneverseen",
+    "name": "As Never Seen",
     "slug": "e-commerce-app",
-    "platforms": ["ios", "android"],
+    "platforms": ["ios", "android", "web"],
     "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./src/assets/icon.png",
@@ -18,7 +18,7 @@
     "assetBundlePatterns": ["./src/assets/**/*"],
 
     "ios": {
-      "bundleIdentifier": "com.cattuong.ecommerce",
+      "bundleIdentifier": "com.asneverseen.ecommerce",
       "buildNumber": "1.0.1",
       "supportsTablet": true,
       "infoPlist": {
@@ -27,7 +27,7 @@
       }
     },
     "android": {
-      "package": "com.cattuong.ecommerce",
+      "package": "com.asneverseen.ecommerce",
       "versionCode": 2,
       "useNextNotificationsApi": true,
       "permissions": [
